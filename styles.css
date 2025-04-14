@@ -1,0 +1,353 @@
+/* RESET GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY GLOBAL */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('loca.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    padding-top: 70px; /* Espace pour navbar fixe */
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: rgba(2, 27, 127, 0.95);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links a,
+.nav-links span {
+    color: #fff;
+    margin-left: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+/* FORM BOX (login/register) */
+.form-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 35px;
+    max-width: 400px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* INPUTS */
+input, select, textarea, button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus, select:focus {
+    border-color: #3498db;
+    outline: none;
+    background-color: #f9fcff;
+}
+
+/* BUTTONS */
+button {
+    background-color: #3498db;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* DASHBOARD */
+.dashboard-box {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: center;
+    min-width: 300px;
+    margin: auto;
+}
+
+/* DASHBOARD LINKS */
+.dashboard-box a {
+    display: block;
+    margin-top: 15px;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dashboard-box a:hover {
+    text-decoration: underline;
+}
+
+/* WELCOME CONTAINER */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    text-align: center;
+    
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* HOUSE CARDS */
+.house {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    background-color: #fafafa;
+    transition: box-shadow 0.2s ease;
+}
+
+.house:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.house h3 {
+    font-size: 20px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.house p {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+/* SUCCESS / ERROR MESSAGES */
+.message-success {
+    padding: 15px;
+    background-color: #d4edda;
+    border-left: 5px solid #28a745;
+    margin-bottom: 20px;
+    color: #155724;
+}
+
+.message-error {
+    padding: 15px;
+    background-color: #f8d7da;
+    border-left: 5px solid #dc3545;
+    margin-bottom: 20px;
+    color: #721c24;
+}
+
+/* TEXT ALIGNMENTS */
+.text-center {
+    text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 10px;
+    }
+
+    .form-box,
+    .dashboard-box {
+        width: 90%;
+    }
+
+    .container {
+        flex-direction: column;
+        height: auto;
+        margin-top: 20px;
+    }
+}
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th, .user-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.user-table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.btn-edit, .btn-delete {
+    padding: 6px 12px;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-edit {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
+.container{
+    color: black;
+}
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    min-width: 800px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.btn-edit, .btn-delete {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+
+.btn-edit {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #d9534f;
+    color: white;
+}
+
+.transparent-frame {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.transparent-border {
+    border: 2px solid rgba(0, 0, 0, 0.2); 
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+/* Form Box */
+.form-box {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn-confirm, .btn-cancel {
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-confirm {
+    background-color: #28a745; /* Green */
+}
+
+.btn-cancel {
+    background-color: #dc3545; /* Red */
+}
+
+.btn-confirm:hover {
+    background-color: #218838;
+}
+
+.btn-cancel:hover {
+    background-color: #c82333;
+}
+.btn-return {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.btn-return:hover {
+    background-color: #0056b3;
+}
+
